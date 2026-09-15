@@ -1,0 +1,12 @@
+name: Publish reviewed Remedial Physiotherapy redesign
+on:
+  push:
+    branches: [gh-pages]
+    paths: [.github/workflows/publish-reviewed-20260915.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    uses: SharpSites-demo/sparta-gym-spa-ritik-demo/.github/workflows/publish-reviewed-html.yml@41cd0e039ca25ad2234ffc0978649d9e00875f09
+    with:
+      expected_sha256: 7bea6267092f7ca6fa4a0be89f8324cf21cad79ef8366ae17ea7962529a41998
